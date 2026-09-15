@@ -4,8 +4,8 @@ function renderList() {
         const listItem = document.createElement('li');
         listItem.textContent = task;
         taskList.appendChild(listItem);
-
     });
+    console.log('List rendered successfully');
 }
 
 
