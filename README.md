@@ -24,3 +24,16 @@
     - [ ]
     - [ ] 
     
+## My build loop
+
+    For every story:
+
+    1. Read the story and decide what "done" looks like.
+    2. Make a branch named for the story.
+    3. Decide the next function: its name, what goes in, what comes out.
+    4. Ask OpenCode for that one function, with the story as the boundary.
+    5. Explain the proposal in my own words, and predict what will change on the page.
+    6. Put it in.
+    7. Test it against the story's checkpoint in the browser.
+    8. Commit, with a message that says what and why.
+    9. Repeat 3 through 8 until the story passes. Then open the PR, read my own diff, merge, and pull.
