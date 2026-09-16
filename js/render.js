@@ -1,5 +1,7 @@
 function renderList() {
     const taskList = document.getElementById('task-list');
+    console.log('taskList', taskList);
+    taskList.innerHTML = ''; // Clear existing list items
     tasks.forEach((task, index) => {
         const listItem = document.createElement('li');
         listItem.textContent = task;
@@ -7,5 +9,6 @@ function renderList() {
     });
     console.log('List rendered successfully');
 }
+
 
 
