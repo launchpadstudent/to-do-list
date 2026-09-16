@@ -4,7 +4,11 @@ function renderList() {
     taskList.innerHTML = ''; // Clear existing list items
     tasks.forEach((task, index) => {
         const listItem = document.createElement('li');
-        listItem.textContent = task;
+        listItem.textContent = task.text;
+        listItem.classList.toggle('done', task.done);
+        listItem.addEventListener('click', () => {
+            toggleComplete(index);
+        });
         taskList.appendChild(listItem);
     });
     console.log('List rendered successfully');
