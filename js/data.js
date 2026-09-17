@@ -9,3 +9,12 @@ function toggleComplete(index) {
     tasks[index].done = !tasks[index].done;
     renderList();
 }
+
+function updateTaskNumber() {
+    let left = 0;
+    let done = 0;
+    tasks.forEach(task => {
+        task.done ? done++ : left++;
+    });
+    document.getElementById('task-count').textContent = `Tasks left: ${left}, Tasks done: ${done}`;
+}
