@@ -16,7 +16,7 @@
     - [x] As a user, I can type a task and add it, and it appears in the list.
     - [x] As a user, I can mark a task complete, and it shows as done.
     - [x] As a user, I can see how many tasks are left, and the number updates as I work.
-    - [ ] As a user, my tasks are still there when I refresh the page.
+    - [x] As a user, my tasks are still there when I refresh the page.
 
     ### My own stories
 
