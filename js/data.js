@@ -1,4 +1,13 @@
-const tasks = [];
+const tasks = loadTasks() || [];
+
+function loadTasks() {
+    const saved = localStorage.getItem('tasks');
+    return saved ? JSON.parse(saved) : [];
+}
+
+function saveTasks() {
+    localStorage.setItem('tasks', JSON.stringify(tasks));
+}
 
 function addTask(task) {
     tasks.push({text: task, done: false});
