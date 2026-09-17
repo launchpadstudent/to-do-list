@@ -12,7 +12,7 @@ function renderList() {
         taskList.appendChild(listItem);
     });
     updateTaskNumber();
-    console.log('List rendered successfully');
+    saveTasks();
 }
 
 
